@@ -31,6 +31,12 @@ const membri = [
     },
 ]
 
+const container = document.getElementById("contenitore");
+
 membri.forEach(element => {
     console.log("Nome: "+element.name+" Ruolo: "+element.role+" Foto: "+element.photo);
+})
+
+membri.forEach(element => {
+    container.innerHTML += "Nome: "+element.name+", Ruolo: "+element.role+", Foto: "+element.photo+"<br><br>";
 })
